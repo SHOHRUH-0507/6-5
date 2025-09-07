@@ -8,6 +8,8 @@
   --color-icon: #9EBBBD;
   --color-white: #fff;
   --color-title: #3D6666;
+  --color-light:#C5E4E7;
+
   --default-font-family: 'Space Mono', monospace
 }
 
@@ -19,4 +21,14 @@
     #root {
         @apply flex flex-col pt-[3rem] md:pt-[5rem] lg:pt-[10rem]
     }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
 }

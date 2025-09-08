@@ -1,29 +1,13 @@
-import React, { useRef } from "react"
-import { BsCurrencyDollar } from "react-icons/bs"
+import React from "react"
+import Bill from "./Bill";
+import NumberOfPeople from "./NumberOfPeople";
 
 function Form() {
-  const billInputRef = useRef();
-
   return (
-    <form className="flex flex-col gap-8">
-      <label className="flex flex-col">
-        <div className="flex items-center gap-2 justify-between mb-1.5">
-          <span>Bill</span>
-          <span>Can’t be zero</span>
-        </div>
-
-        <span className="flex items-center rounded-[.3125rem] bg-light px-4.5 py-1.5">
-          <BsCurrencyDollar className="block shrink-0 text-base text-icon font-bold" />
-          <input
-            ref={billInputRef}
-            className="text-right grow text-2xl text-dark-green"
-            type="number"
-            placeholder="0"
-            name="bill"
-          />
-        </span>
-      </label>
-    </form>
+    <div className="flex flex-col gap-8">
+     <Bill/>
+     <NumberOfPeople/>
+    </div>
   );
 }
 

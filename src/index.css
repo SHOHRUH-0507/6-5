@@ -3,12 +3,14 @@
 @theme {
   --color-light-blue: #C5E4E7;
   --color-primary: #26C2AE;
+  --color-primary-35: rgba(0, 71, 75, 0.35);
   --color-dark-green: #00474B;
   --color-text: #5E7A7D;
   --color-icon: #9EBBBD;
   --color-white: #fff;
   --color-title: #3D6666;
   --color-light:#C5E4E7;
+  --color-red:#E17457;
 
   --default-font-family: 'Space Mono', monospace
 }
@@ -19,7 +21,18 @@
     }
 
     #root {
-        @apply flex flex-col pt-[3rem] md:pt-[5rem] lg:pt-[10rem]
+        @apply flex flex-col items-center pt-[3rem] md:pt-[5rem] lg:pt-[10rem]
+    }
+}
+
+@layer components {
+    .input {
+        @apply text-right grow text-2xl text-dark-green rounded-[.3125rem] bg-light px-4.5 py-1.5 
+     bg-no-repeat bg-position-[center_left_19px] focus:outline-2 outline-primary;
+
+     &::placeholder {
+        @apply text-primary-35;
+     }
     }
 }
 

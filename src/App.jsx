@@ -3,13 +3,13 @@ import {Form, Title} from "./components"
 
 function App() {
   return (
-    <div>
-      <Title></Title>
+    <>
+      <Title/>
 
-    <div className="w-full max-w-[920px] rounded-t-3x1 p-8 bg-white ">
-      <Form></Form>
+    <div className="w-full max-w-[920px] rounded-t-3x1 p-8 bg-white md:rounded-3xl">
+      <Form/>
     </div>
-     </div>
+  </>
   );
 }
 

@@ -11,8 +11,15 @@
   --color-title: #3D6666;
   --color-light:#C5E4E7;
   --color-red:#E17457;
+  --color-gray:#7F9D9F;
 
-  --default-font-family: 'Space Mono', monospace
+  --default-font-family:'space mono'
+}
+
+@layer base {
+  html {
+    font-family: "Space Mono", monospace;
+  }
 }
 
 @layer base {
@@ -28,7 +35,7 @@
 @layer components {
     .input {
         @apply text-right grow text-2xl text-dark-green rounded-[.3125rem] bg-light px-4.5 py-1.5 
-     bg-no-repeat bg-position-[center_left_19px] focus:outline-2 outline-primary;
+     bg-no-repeat bg-position-[center_left_19px] focus:outline-2 ;
 
      &::placeholder {
         @apply text-primary-35;

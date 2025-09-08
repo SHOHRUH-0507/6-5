@@ -5,7 +5,7 @@ function Bill() {
     <div className="flex flex-col">
         <div className="flex items-center gap-2 justify-between mb-1.5">
           <span>Bill</span>
-          <span>Can’t be zero</span>
+          { false && <span className='text-primary'>Can’t be zero</span>}
         </div>
           <input
             className={"input bg-[url(./dollar.svg)] outline-primary"}
